@@ -60,6 +60,7 @@ jobs:
       - name: Config Terraform plugin cache
         if: steps.changes.outputs.src== 'true'
         run: mkdir --parents ${{ env.TERRAFORM_DOCS_VERSION }}
+        
 
       - name: Cache Terraform
         uses: actions/cache@v3
